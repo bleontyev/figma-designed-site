@@ -1,0 +1,2533 @@
+/* 
+    Сайт по Figma-проекту. 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+/* Mobile L M */
+@media screen and ( max-width: 599px ) and ( min-width: 375px) 
+{
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Oswald", sans-serif;
+} 
+
+.rabochee-pole-flex{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+
+    justify-content: center;
+    flex-direction: row;    
+    align-items: center;    
+    flex-wrap: nowrap;
+    border-radius: calc(60px * 0.40);   
+}
+
+.rabochee-pole{
+    position: absolute;
+    width: 2173px;    
+    height: 923px;    
+    background-color: #060233f0;    
+    background-image: url(../figma/samyj-nizhnij-sloj-1.png); 
+    opacity: 1.0;    
+    border-radius: calc(60px * 0.40);    
+    flex-basis: auto;    
+}
+
+.kameralnaya-proverka{
+    position: absolute;
+    width: 2173px;
+    height: 923px;    
+    background-image: url(../figma/dashboard-desktop-1-obrezannyj-1.png);     
+    background-size: cover;
+    opacity: 1.0;    
+    border-radius: calc(60px * 0.40);    
+}
+
+ /* Background */
+.background{
+    /* visibility: hidden;     */
+    position: absolute;
+    width: 2172px;
+    height: 1295px;
+    left: 0px;
+    top: 0px;
+    background-color: #060233f0;
+    background-image: url(../figma/snizu-1.png);
+    opacity: 1.0;
+    border-radius: calc(60px * 0.40);   
+}
+
+/* Sidebar */
+.sidebar{
+    width: 238px;
+    height: 923px;    
+    min-width: 238px;    
+    max-width: 238px;    
+    border-bottom-left-radius: calc(60px * 0.40);    
+    border-top-left-radius: calc(60px * 0.40);      
+    background-color: #060233f0;
+
+    /* Камеральная проверка. */
+    /* background-image: url(../figma/desktop-sidebar-1.png);     */
+
+    background-size: cover;
+    opacity: 1.0;
+    z-index: 1;
+}
+
+.sidebar-s-usileniem-sinego-v-fone{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -456px;
+
+    border-bottom-left-radius: calc(60px * 0.40);    
+    border-top-left-radius: calc(60px * 0.40);      
+    background-image: url(../figma/fon-sidebar-2.png);
+
+    background-size: cover;
+    opacity: 0.2;
+    z-index: 2;
+}
+
+.oblast-soderzhaniya{
+    position: relative;
+    width: 1790px;
+    height: 923px;    
+    top: 0px;
+    flex-grow: 2;
+    flex-basis: auto;    
+    min-width: 800px;
+    max-width: 2560px;    
+
+    background-color: #060233f0;
+
+    /* Камеральная проверка. */
+    /* background-image: url(../figma/desktop-oblast-soderzhaniya-1.png);
+    background-size: cover;
+    opacity: 1.0;     */
+
+    border-bottom-right-radius: calc(60px * 0.40);    
+    border-top-right-radius: calc(60px * 0.40);    
+}
+
+.oblast-soderzhaniya-s-usileniem-sinego-v-fone{
+    display: flex;
+    position: relative;
+    width: 800px;
+    height: 923px;
+    top: -955px;
+
+    background-image: url(../figma/fon-oblast-soderzhaniya-2.png);
+    background-size: cover;
+    opacity: 0.2;    
+
+    border-bottom-right-radius: calc(60px * 0.40);    
+    border-top-right-radius: calc(60px * 0.40);    
+    z-index: 1;    
+}
+
+.oblast-soderzhaniya-flex{
+    position: relative;
+    width: 90%;
+    height: 923px;    
+    left: 5%;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-evenly;  
+    align-items: left;  
+    min-width: 800px;  
+}
+
+/* ©2020 ACME LLC. */
+.copyright{
+    position: relative;
+    left: 131px;
+    top: 419px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+   
+    color: #FFFFFF;
+    
+    opacity: 0.25;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 3;    
+}
+
+/* SUPPORT */
+.support{
+    /* position: absolute; */
+    position: relative;
+    width: 59px;
+    height: 25px;
+    left: 154px;
+    top: 380px;    
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    
+    /* light */
+    color: #FFFFFF;
+    
+    opacity: 0.7;
+    z-index: 3;    
+}
+/* CONTACT */
+.contact{
+    /* position: absolute; */
+    position: relative;
+    width: 58px;
+    height: 25px;
+    left: 154px;
+    top: 400px;    
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    
+    /* light */
+    color: #FFFFFF;
+    
+    opacity: 0.7;
+    z-index: 3;    
+}
+/* Menu */
+.menu{
+    position: relative;
+    width: 90px;
+    height: 315px;
+    left: 142px;
+    top: 213px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;    
+    justify-items: right;    
+    align-items: center;
+    z-index: 3;
+}
+
+.menu-item{
+    text-align: center;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    color: #FFFFFF;    
+}
+.menu-item:hover{
+    background-color: azure;
+    color: #A276FF;    
+}
+.menu-item:hover::before{
+    content: '';
+    /* position: absolute; */
+    position: relative;
+    left: 142px;
+    border: 1px solid;
+    width: 7px;    
+    height: 25px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #A276FF;
+    z-index: 7;
+}
+/* ITEM 1 */
+.item-1{
+    order: 1;
+}
+/* ITEM 2 */
+.item-2{
+    order: 2;    
+}
+/* ITEM 3 */
+.item-3{
+    order: 3;    
+}    
+/* ITEM 4 */
+.item-4{
+    order: 4;    
+}
+/* ITEM 5 */
+.item-5{
+    order: 5;    
+    }
+    
+/* HOME */
+.home{
+    position: relative;
+    left: 70px;
+    top: 167px;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    
+    /* A276FF */
+    color: #A276FF;
+    z-index: 3;    
+}
+
+/* YOURLOGO */
+.yourlogo{
+    /* position: absolute; */
+    position: relative;
+    left: 70px;
+    top: 50px;    
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 10pt;
+    text-decoration: uppercase;
+    
+    /* A276FF */
+    color: #A276FF;
+    z-index: 3;    
+}
+.logo{
+    font-weight: 900;
+    font-size: 10pt;
+    color: #fff;
+    text-align: center;
+}
+.color_logo{
+    color: #A276FF;
+}
+/* Thumbs */
+.thumbs{
+    width: 70%;
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;    
+    /* justify-content: space-evenly; */
+    justify-content: space-between;    
+    gap: 4px;
+}
+.karta{
+    box-sizing: border-box;
+    width: 104px;
+    height: 62px;
+    border-radius: 5px;    
+}
+.karta-1{
+    background: url(../figma/nick-owuor-astro-nic-visuals-wDifg5xc9Z4-unsplash.jpg.png);
+    background-size: cover;    
+}
+
+.karta-2{
+    background: url(../figma/karta-2.png);
+    background-size: cover;    
+}
+
+.karta-3{
+    background: url(../figma/karta-3.png);
+    background-size: cover;    
+}
+
+.karta-4{
+    background: url(../figma/karta-4.png);
+    background-size: cover;    
+}
+
+/* SIMPLE STARTER TEMPLATE */
+.simple-starter{
+    position: relative;
+    top: 119px;
+    /* width: 1025px; */
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(56px * 0.40);
+    
+    /* FFF */
+    color: #FFFFFF;
+    z-index: 2;    
+}
+
+/* TEMPLATE */
+.template{
+    position: relative;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(120px * 0.40);
+    top: 21px;
+
+    /* A276FF */
+    color: #A276FF;
+    z-index: 2;    
+}
+
+.a-clean-simple-desktop-design{
+    width: 75%;    
+    /* Body font */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(29px * 0.40);
+    line-height: 155.19%;
+    
+    /* FFF */
+    color: #FFFFFF;
+    text-align: left;
+    z-index: 2;    
+}
+
+/* LEARN MORE */
+.learn-more{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(20px * 0.40);
+    text-align: center;
+    
+    /* FFF */
+    color: #FFFFFF;
+    /* color: red; */
+}
+
+/* Button outline */
+.button-outline{
+    width: calc(352px * 0.40);
+    height: calc(60px * 0.40);
+
+    border: 1px solid #FFFFFF;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;    
+}
+
+/* NEWS */
+.news{
+    width: calc(1025px * 0.40);
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(42px * 0.40);
+    color: #FFFFFF;
+    z-index: 2;        
+}
+
+/* Downward triangle */
+.downward-triangle{
+    position: relative;
+    width: 10px;
+    left: 58px;
+    top: -18px;
+    z-index: 2;        
+}
+
+.lorem-ipsum{
+    position: relative;
+    width: calc(1145px * 0.40);
+    left: 0px;
+    top: 0px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 165.69%;
+    
+    /* FFF */
+    color: #FFFFFF;
+    /* color: red; */
+    z-index: 2;        
+}
+
+/* Rectangle 47 */
+.social-rectangle{
+    position: relative;
+    width: calc(232px * 0.40);
+    height: calc(73px * 0.40);    
+    left: 65%;
+    top: 0px;
+    background: #A276FF;
+    border-radius: 0px 0px 4px 10px;
+    display: flex;
+    justify-content: space-evenly;    
+    align-items: center;   
+    z-index: 5;        
+}
+
+.social-tweeter-logo{
+    position: relative;
+    width: 22.92px; 
+    height: 21px;
+    background-image: url(../figma/tweeter-logo.png);    
+}
+
+.social-facebook-logo{
+    width: 14px; 
+    height: 22px;
+    background-image: url(../figma/facebook-logo.png);    
+}
+
+}   
+/* Медиа-запрос. */
+
+/* Notebook 1024px */
+@media screen and ( max-width: 899px ) and ( min-width: 600px) 
+{
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* margin-left: 0%;    
+    margin-right: 0%;    
+    margin-top: 0%;
+    margin-bottom: 0%;     */
+
+    font-family: "Oswald", sans-serif;
+    /* width: 2173px;    
+    height: 923px;      */
+} 
+
+.rabochee-pole-flex{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+
+    /* width: 2173px;    
+    height: 923px;  */
+
+    justify-content: center;
+    /* flex-direction: column;     */
+    flex-direction: row;    
+    align-items: center;    
+    flex-wrap: nowrap;
+    /* Берет, если нужно функцию фона из .rabochee-pole. */
+    /* background-color: #060233f0;    
+    background-image: url(../figma/samyj-nizhnij-sloj-1.png);    
+    background-size: cover;    
+    opacity: 1.0;          */
+
+    /* flex-grow: 2;
+    flex-basis: auto;     */
+
+    /* border-radius: calc(60px * 0.40);     */
+    border-radius: calc(60px * 0.40);   
+}
+
+.rabochee-pole{
+    position: absolute;
+    width: 2173px;    
+    height: 923px;    
+    background-color: #060233f0;    
+    background-image: url(../figma/samyj-nizhnij-sloj-1.png); 
+    opacity: 1.0;    
+    border-radius: calc(60px * 0.40);    
+    flex-basis: auto;    
+}
+
+.kameralnaya-proverka{
+    position: absolute;
+    width: 2173px;
+    height: 923px;    
+    background-image: url(../figma/dashboard-desktop-1-obrezannyj-1.png);     
+    background-size: cover;
+    opacity: 1.0;    
+    border-radius: calc(60px * 0.40);    
+}
+
+ /* Background */
+.background{
+    /* visibility: hidden;     */
+    position: absolute;
+    width: 2172px;
+    height: 1295px;
+    left: 0px;
+    top: 0px;
+    /* background-color: blue; */
+    background-color: #060233f0;
+    background-image: url(../figma/snizu-1.png);
+    opacity: 1.0;
+    border-radius: calc(60px * 0.40);   
+}
+
+/* car-3075497_1280 1 */
+.car-3075497_1280-1{
+    /* visibility: hidden;     */
+    position: absolute;
+    width: 2172px;
+    height: 1295px;
+    left: 0px;
+    top: 0px;
+    background-image: url(../figma/snizu-1.png);
+    border-radius: calc(60px * 0.40);    
+    box-shadow: 0px 4px 150px rgba(0, 0, 0, 0.75);        
+}
+
+/* Sidebar */
+.sidebar{
+    /* visibility: hidden;     */
+
+    /* position: absolute;
+    left: 0px;
+    top: 0px; */
+
+    /* position: relative; */
+    width: 238px;
+    height: 923px;    
+    /* flex-grow: 1;
+    flex-basis: auto;     */
+    min-width: 238px;    
+    max-width: 238px;    
+    /* flex-shrink: 2; */
+
+    /* background: #0B0B0D; */
+    /* opacity: 0.5; */
+    /* backdrop-filter: blur(20px); */
+/* Note: backdrop-filter has minimal browser support */    
+    border-bottom-left-radius: calc(60px * 0.40);    
+    border-top-left-radius: calc(60px * 0.40);      
+    /* border: 1px solid red;   */
+
+    /* background-color: chartreuse;     */
+    /* background-image: url(../figma/fon-sidebar-2.png); */
+    background-color: #060233f0;
+
+    /* Камеральная проверка. */
+    /* background-image: url(../figma/desktop-sidebar-1.png);     */
+
+    background-size: cover;
+    opacity: 1.0;
+    z-index: 1;
+}
+
+.sidebar-s-usileniem-sinego-v-fone{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -456px;
+
+    border-bottom-left-radius: calc(60px * 0.40);    
+    border-top-left-radius: calc(60px * 0.40);      
+    background-image: url(../figma/fon-sidebar-2.png);
+
+    background-size: cover;
+    opacity: 0.2;
+    z-index: 2;
+}
+
+.oblast-soderzhaniya{
+    /* visibility: hidden;     */
+    /* position: absolute; */
+    /* width: calc(2172px - 385px); */
+    position: relative;
+    width: 1790px;
+    height: 923px;    
+    top: 0px;
+    /* left: 238px;
+    top: 0px; */
+    flex-grow: 2;
+    flex-basis: auto;    
+    /* min-width: 1790px;     */
+    min-width: 800px;
+    max-width: 2560px;    
+
+    background-color: #060233f0;
+
+    /* Камеральная проверка. */
+    /* background-image: url(../figma/desktop-oblast-soderzhaniya-1.png);
+    background-size: cover;
+    opacity: 1.0;     */
+
+    border-bottom-right-radius: calc(60px * 0.40);    
+    border-top-right-radius: calc(60px * 0.40);    
+}
+
+.oblast-soderzhaniya-s-usileniem-sinego-v-fone{
+    display: flex;
+    position: relative;
+    /* width: 100%;
+    height: 100%; */
+    width: 800px;
+    height: 923px;
+    top: -955px;
+
+    background-image: url(../figma/fon-oblast-soderzhaniya-2.png);
+    background-size: cover;
+    opacity: 0.2;    
+
+    border-bottom-right-radius: calc(60px * 0.40);    
+    border-top-right-radius: calc(60px * 0.40);    
+    z-index: 1;    
+}
+
+.oblast-soderzhaniya-flex{
+    /* visibility: hidden;     */
+    /* position: absolute; */
+    position: relative;
+    width: 90%;
+    height: 923px;    
+    /* height: 100vh; */
+    left: 5%;
+    top: 0px;
+    /* border: 1px solid red;   */
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-evenly;  
+    align-items: left;  
+    min-width: 800px;  
+}
+
+/* ©2020 ACME LLC. */
+.copyright{
+    /* position: absolute; */
+    position: relative;
+    /* width: 117px;
+    height: 25px; */
+    left: 131px;
+    top: 419px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    /* line-height: 25px; */
+    
+    color: #FFFFFF;
+    /* color: black; */
+    
+    opacity: 0.25;
+    /* opacity: 1.0; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 3;    
+}
+
+/* Marker */
+.marker{
+    position: absolute;
+    width: 5px;
+    height: 42px;
+    left: 0px;
+    top: 200px;
+    visibility: hidden;
+    /* A276FF */
+    background: #A276FF;
+}
+/* SUPPORT */
+.support{
+    /* position: absolute; */
+    position: relative;
+    width: 59px;
+    height: 25px;
+    left: 154px;
+    top: 380px;    
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    
+    /* light */
+    color: #FFFFFF;
+    
+    opacity: 0.7;
+    z-index: 3;    
+}
+/* CONTACT */
+.contact{
+    /* position: absolute; */
+    position: relative;
+    width: 58px;
+    height: 25px;
+    left: 154px;
+    top: 400px;    
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    
+    /* light */
+    color: #FFFFFF;
+    
+    opacity: 0.7;
+    z-index: 3;    
+}
+/* Menu */
+.menu{
+    position: relative;
+    width: 90px;
+    height: 315px;
+    left: 142px;
+    top: 213px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;    
+    justify-items: right;    
+    align-items: center;
+    z-index: 3;
+}
+
+.menu-item{
+    text-align: center;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    color: #FFFFFF;    
+}
+.menu-item:hover{
+    background-color: azure;
+    color: #A276FF;    
+}
+.menu-item:hover::before{
+    content: '';
+    /* position: absolute; */
+    position: relative;
+    /* left: 142px; */
+    left: -77px;    
+    border: 1px solid;
+    width: 7px;    
+    height: 25px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #A276FF;
+    z-index: 7;
+}
+/* ITEM 1 */
+.item-1{
+    order: 1;
+}
+/* ITEM 2 */
+.item-2{
+    order: 2;    
+}
+/* ITEM 3 */
+.item-3{
+    order: 3;    
+}    
+/* ITEM 4 */
+.item-4{
+    order: 4;    
+}
+/* ITEM 5 */
+.item-5{
+    order: 5;    
+    }
+    
+/* HOME */
+.home{
+    position: relative;
+    left: 70px;
+    top: 167px;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #A276FF;
+    z-index: 3;    
+}
+
+/* YOURLOGO */
+.yourlogo{
+    /* position: absolute; */
+    position: relative;
+    left: 70px;
+    top: 50px;    
+   
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 10pt;
+    /* line-height: 44px; */
+    text-decoration: uppercase;
+    
+    /* A276FF */
+    color: #A276FF;
+    z-index: 3;    
+}
+.logo{
+    font-weight: 900;
+    font-size: 10pt;
+    color: #fff;
+    text-align: center;
+}
+.color_logo{
+    color: #A276FF;
+}
+/* Thumbs */
+.thumbs{
+    width: 70%;
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;    
+    justify-content: space-between;    
+    gap: 4px;
+}
+.karta{
+    box-sizing: border-box;
+    width: 104px;
+    height: 62px;
+    border-radius: 5px;    
+}
+.karta-1{
+    background: url(../figma/nick-owuor-astro-nic-visuals-wDifg5xc9Z4-unsplash.jpg.png);
+    background-size: cover;    
+}
+
+.karta-2{
+    background: url(../figma/karta-2.png);
+    background-size: cover;    
+}
+
+.karta-3{
+    background: url(../figma/karta-3.png);
+    background-size: cover;    
+}
+
+.karta-4{
+    background: url(../figma/karta-4.png);
+    background-size: cover;    
+}
+
+/* SIMPLE STARTER TEMPLATE */
+.simple-starter{
+    position: relative;
+    top: 119px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(56px * 0.40);
+
+    color: #FFFFFF;
+    z-index: 2;    
+}
+
+/* TEMPLATE */
+.template{
+    position: relative;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(120px * 0.40);
+    top: 21px;
+    color: #A276FF;
+    z-index: 2;    
+}
+
+.a-clean-simple-desktop-design{
+    width: 75%;    
+    /* Body font */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(29px * 0.40);
+    line-height: 155.19%;
+    color: #FFFFFF;
+    text-align: left;
+    z-index: 2;    
+}
+
+/* LEARN MORE */
+.learn-more{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(20px * 0.40);
+    text-align: center;
+    
+    /* FFF */
+    color: #FFFFFF;
+    /* color: red; */
+}
+
+/* Button outline */
+.button-outline{
+    width: calc(352px * 0.40);
+    height: calc(60px * 0.40);
+
+    border: 1px solid #FFFFFF;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;    
+}
+
+/* NEWS */
+.news{
+    width: calc(1025px * 0.40);
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(42px * 0.40);
+    color: #FFFFFF;
+    z-index: 2;        
+}
+
+/* Downward triangle */
+.downward-triangle{
+    /* box-sizing: border-box; */
+    position: relative;
+    width: 10px;
+    left: 58px;
+    top: -18px;
+    z-index: 2;        
+}
+
+.lorem-ipsum{
+    position: relative;
+    width: calc(1145px * 0.40);
+    left: 0px;
+    top: 0px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 165.69%;
+    color: #FFFFFF;
+    z-index: 2;        
+}
+
+/* Rectangle 47 */
+.social-rectangle{
+    position: relative;
+    width: calc(232px * 0.40);
+    height: calc(73px * 0.40);    
+    left: 65%;
+    top: 0px;
+    background: #A276FF;
+    border-radius: 0px 0px 4px 10px;
+    display: flex;
+    justify-content: space-evenly;    
+    align-items: center;   
+    z-index: 5;        
+}
+
+.social-tweeter-logo{
+    position: relative;
+    width: 22.92px; 
+    height: 21px;
+    background-image: url(../figma/tweeter-logo.png);    
+}
+
+.social-facebook-logo{
+    width: 14px; 
+    height: 22px;
+    background-image: url(../figma/facebook-logo.png);    
+}
+
+
+}   
+/* Медиа-запрос. */
+
+/* Notebook 1024px */
+@media screen and ( max-width: 1199px ) and ( min-width: 900px) 
+{
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Oswald", sans-serif;
+} 
+
+.rabochee-pole-flex{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+
+    justify-content: center;
+    flex-direction: row;    
+    align-items: center;    
+    flex-wrap: nowrap;
+    border-radius: calc(60px * 0.40);   
+}
+
+.rabochee-pole{
+    position: absolute;
+    width: 2173px;    
+    height: 923px;    
+    background-color: #060233f0;    
+    background-image: url(../figma/samyj-nizhnij-sloj-1.png); 
+    opacity: 1.0;    
+    border-radius: calc(60px * 0.40);    
+    flex-basis: auto;    
+}
+
+.kameralnaya-proverka{
+    position: absolute;
+    width: 2173px;
+    height: 923px;    
+    background-image: url(../figma/dashboard-desktop-1-obrezannyj-1.png);     
+    background-size: cover;
+    opacity: 1.0;    
+    border-radius: calc(60px * 0.40);    
+}
+
+ /* Background */
+.background{
+    /* visibility: hidden;     */
+    position: absolute;
+    width: 2172px;
+    height: 1295px;
+    left: 0px;
+    top: 0px;
+    background-color: #060233f0;
+    background-image: url(../figma/snizu-1.png);
+    opacity: 1.0;
+    border-radius: calc(60px * 0.40);   
+}
+
+/* Sidebar */
+.sidebar{
+    width: 317px;
+    height: 923px;    
+    min-width: 317px;    
+    max-width: 317px;    
+    border-bottom-left-radius: calc(60px * 0.40);    
+    border-top-left-radius: calc(60px * 0.40);      
+    background-color: #060233f0;
+
+    /* Камеральная проверка. */
+    /* background-image: url(../figma/desktop-sidebar-1.png);     */
+
+    background-size: cover;
+    opacity: 1.0;
+    z-index: 1;
+}
+
+.sidebar-s-usileniem-sinego-v-fone{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -456px;
+
+    border-bottom-left-radius: calc(60px * 0.40);    
+    border-top-left-radius: calc(60px * 0.40);      
+    background-image: url(../figma/fon-sidebar-2.png);
+
+    background-size: cover;
+    opacity: 0.2;
+    z-index: 2;
+}
+
+.oblast-soderzhaniya{
+    position: relative;
+    width: 1790px;
+    height: 923px;    
+    top: 0px;
+    flex-grow: 2;
+    flex-basis: auto;    
+    min-width: 800px;
+    max-width: 2560px;    
+
+    background-color: #060233f0;
+
+    /* Камеральная проверка. */
+    /* background-image: url(../figma/desktop-oblast-soderzhaniya-1.png);
+    background-size: cover;
+    opacity: 1.0;     */
+
+    border-bottom-right-radius: calc(60px * 0.40);    
+    border-top-right-radius: calc(60px * 0.40);    
+}
+
+.oblast-soderzhaniya-s-usileniem-sinego-v-fone{
+    display: flex;
+    position: relative;
+    width: 800px;
+    height: 923px;
+    top: -955px;
+
+    background-image: url(../figma/fon-oblast-soderzhaniya-2.png);
+    background-size: cover;
+    opacity: 0.2;    
+
+    border-bottom-right-radius: calc(60px * 0.40);    
+    border-top-right-radius: calc(60px * 0.40);    
+    z-index: 1;    
+}
+
+.oblast-soderzhaniya-flex{
+    position: relative;
+    width: 90%;
+    height: 923px;    
+    left: 5%;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-evenly;  
+    align-items: left;  
+    min-width: 800px;  
+}
+
+/* ©2020 ACME LLC. */
+.copyright{
+    /* position: absolute; */
+    position: relative;
+    width: 117px;
+    height: 25px;
+    left: 131px;
+    top: 419px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    
+    color: #FFFFFF;
+    /* color: black; */
+    
+    opacity: 0.25;
+    /* opacity: 1.0; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 3;    
+}
+
+/* Marker */
+.marker{
+    position: absolute;
+    width: 5px;
+    height: 42px;
+    left: 0px;
+    top: 200px;
+    visibility: hidden;
+    /* A276FF */
+    background: #A276FF;
+}
+/* SUPPORT */
+.support{
+    /* position: absolute; */
+    position: relative;
+    width: 59px;
+    height: 25px;
+    left: 132px;
+    top: 380px;    
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    
+    /* light */
+    color: #FFFFFF;
+    
+    opacity: 0.7;
+    z-index: 3;    
+}
+/* CONTACT */
+.contact{
+    /* position: absolute; */
+    position: relative;
+    width: 58px;
+    height: 25px;
+    left: 130px;
+    top: 400px;    
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    
+    /* light */
+    color: #FFFFFF;
+    
+    opacity: 0.7;
+    z-index: 3;    
+}
+/* Menu */
+.menu{
+    position: relative;
+    width: 317px;
+    height: 315px;
+    left: 0px;
+    top: 213px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;    
+    justify-items: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.menu-item{
+    text-align: center;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;    
+/* FFF */
+    color: #FFFFFF;    
+}
+.menu-item:hover{
+    background-color: azure;
+    color: #A276FF;    
+}
+.menu-item:hover::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    border: 1px solid;
+    width: 7px;    
+    height: 25px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #A276FF;
+}
+/* ITEM 1 */
+.item-1{
+    width: 55px;
+    height: 25px;
+    order: 1;
+}
+/* ITEM 2 */
+.item-2{
+    width: 55px;
+    height: 25px;
+    order: 2;    
+}
+/* ITEM 3 */
+.item-3{
+    width: 55px;
+    height: 25px;
+    order: 3;    
+}    
+/* ITEM 4 */
+.item-4{
+    width: 55px;
+    height: 25px;
+    order: 4;    
+}
+/* ITEM 5 */
+.item-5{
+    width: 55px;
+    height: 25px;
+    order: 5;    
+    }
+    
+/* HOME */
+.home{
+    position: relative;
+    width: 37px;
+    height: 25px;
+    left: 139px;
+    top: 167px;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    
+    color: #A276FF;
+    z-index: 3;    
+}
+
+/* YOURLOGO */
+.yourlogo{
+    /* position: absolute; */
+    position: relative;
+    left: 90px;
+    top: 68px;    
+
+    width: 137px;
+    height: 44px;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 44px;
+    text-decoration: uppercase;
+    
+    /* A276FF */
+    color: #A276FF;
+    z-index: 3;    
+}
+.logo{
+    font-weight: 900;
+    font-size: 22pt;
+    color: #fff;
+    text-align: center;
+}
+.color_logo{
+    color: #A276FF;
+}
+/* Thumbs */
+.thumbs{
+    width: 80%;
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;    
+    justify-content: space-between;    
+    gap: 4px;
+}
+.karta{
+    box-sizing: border-box;
+    width: 104px;
+    height: 62px;
+    border-radius: 5px;    
+}
+.karta-1{
+    background: url(../figma/nick-owuor-astro-nic-visuals-wDifg5xc9Z4-unsplash.jpg.png);
+    background-size: cover;    
+}
+
+.karta-2{
+    background: url(../figma/karta-2.png);
+    background-size: cover;    
+}
+
+.karta-3{
+    background: url(../figma/karta-3.png);
+    background-size: cover;    
+}
+
+.karta-4{
+    background: url(../figma/karta-4.png);
+    background-size: cover;    
+}
+
+/* SIMPLE STARTER TEMPLATE */
+.simple-starter{
+    position: relative;
+    top: 119px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(56px * 0.40);
+    color: #FFFFFF;
+    z-index: 2;    
+}
+
+/* TEMPLATE */
+.template{
+    position: relative;
+   
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(120px * 0.40);
+    top: 21px;
+    color: #A276FF;
+    z-index: 2;    
+}
+
+.a-clean-simple-desktop-design{
+    width: 80%;    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(29px * 0.40);
+    line-height: 155.19%;
+    color: #FFFFFF;
+    text-align: left;
+    z-index: 2;    
+}
+
+/* LEARN MORE */
+.learn-more{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(20px * 0.40);
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Button outline */
+.button-outline{
+    width: calc(352px * 0.40);
+    height: calc(60px * 0.40);
+
+    border: 1px solid #FFFFFF;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;    
+}
+
+/* NEWS */
+.news{
+    width: calc(1025px * 0.40);
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(42px * 0.40);
+    color: #FFFFFF;
+    z-index: 2;        
+}
+
+/* Downward triangle */
+.downward-triangle{
+    position: relative;
+    width: 10px;
+    left: 58px;
+    top: -18px;
+    z-index: 2;        
+}
+
+.lorem-ipsum{
+    position: relative;
+    width: calc(1145px * 0.40);
+    left: 0px;
+    top: 0px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 165.69%;
+    color: #FFFFFF;
+    z-index: 2;        
+}
+
+/* Rectangle 47 */
+.social-rectangle{
+    position: relative;
+    width: calc(232px * 0.40);
+    height: calc(73px * 0.40);    
+    left: 70%;
+    top: 0px;
+    background: #A276FF;
+    border-radius: 0px 0px 4px 10px;
+    display: flex;
+    justify-content: space-evenly;    
+    align-items: center;   
+    z-index: 5;        
+}
+
+.social-tweeter-logo{
+    position: relative;
+    width: 22.92px; 
+    height: 21px;
+    background-image: url(../figma/tweeter-logo.png);    
+}
+
+.social-facebook-logo{
+    width: 14px; 
+    height: 22px;
+    background-image: url(../figma/facebook-logo.png);    
+}
+
+}   
+/* Медиа-запрос. */
+
+/* Notebook L 1440px */
+@media screen and ( max-width: 1499px ) and ( min-width: 1200px) 
+/* and ( max-height: 1599px ) and ( min-height: 600px)  */
+{
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Oswald", sans-serif;
+} 
+
+.rabochee-pole-flex{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    flex-direction: row;    
+    align-items: center;    
+    flex-wrap: nowrap;
+    border-radius: 70px;    
+}
+
+.rabochee-pole{
+    position: absolute;
+    width: 2173px;    
+    height: 1296px;    
+    background-color: #060233f0;    
+    background-image: url(../figma/samyj-nizhnij-sloj-1.png); 
+    opacity: 1.0;    
+    border-radius: 70px;    
+    flex-basis: auto;    
+}
+
+.kameralnaya-proverka{
+    position: absolute;
+    width: 2173px;
+    height: 1296px;    
+    background-image: url(../figma/dashboard-desktop-1-obrezannyj-1.png);     
+    background-size: cover;
+    opacity: 1.0;    
+    border-radius: 70px;    
+}
+
+/* Sidebar */
+.sidebar{
+    /* position: relative; */
+    width: 384px;
+    height: 1296px;    
+    min-width: 384px;    
+    max-width: 384px;    
+    border-bottom-left-radius: 70px;    
+    border-top-left-radius: 70px;      
+    background-color: #060233f0;
+
+    /* Камеральная проверка. */
+    /* background-image: url(../figma/desktop-sidebar-1.png);     */
+
+    background-size: cover;
+    opacity: 1.0;
+    z-index: 1;
+}
+
+.sidebar-s-usileniem-sinego-v-fone{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -456px;
+
+    border-bottom-left-radius: 70px;    
+    border-top-left-radius: 70px;      
+    background-image: url(../figma/fon-sidebar-2.png);
+
+    background-size: cover;
+    opacity: 0.2;
+    z-index: 2;
+}
+
+.oblast-soderzhaniya{
+    width: 1790px;
+    height: 1296px;    
+    flex-grow: 2;
+    flex-basis: auto;    
+    min-width: 800px;
+    max-width: 2560px;    
+
+    background-color: #060233f0;
+
+    /* Камеральная проверка. */
+    /* background-image: url(../figma/desktop-oblast-soderzhaniya-1.png);
+    background-size: cover;
+    opacity: 1.0;     */
+
+    border-bottom-right-radius: 70px;    
+    border-top-right-radius: 70px;    
+}
+
+.oblast-soderzhaniya-s-usileniem-sinego-v-fone{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -1367px;
+
+    background-image: url(../figma/fon-oblast-soderzhaniya-2.png);
+    background-size: cover;
+    opacity: 0.2;    
+
+    border-bottom-right-radius: 70px;    
+    border-top-right-radius: 70px;    
+    z-index: 1;    
+}
+
+.oblast-soderzhaniya-flex{
+    position: relative;
+    width: 90%;
+    height: 1296px;    
+    left: 5%;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-evenly;  
+    align-items: left;  
+    min-width: 800px;  
+}
+
+/* ©2020 ACME LLC. */
+.copyright{
+    /* position: absolute; */
+    position: relative;
+    width: 117px;
+    height: 25px;
+    left: 131px;
+    top: 731px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    
+    color: #FFFFFF;
+    /* color: black; */
+    
+    opacity: 0.25;
+    /* opacity: 1.0; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 3;    
+}
+
+/* SUPPORT */
+.support{
+    /* position: absolute; */
+    position: relative;
+    width: 59px;
+    height: 25px;
+    left: 132px;
+    top: 602px;    
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    color: #FFFFFF;
+    
+    opacity: 0.7;
+    z-index: 3;    
+}
+/* CONTACT */
+.contact{
+    /* position: absolute; */
+    position: relative;
+    width: 58px;
+    height: 25px;
+    left: 130px;
+    top: 649px;    
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    color: #FFFFFF;
+    
+    opacity: 0.7;
+    z-index: 3;    
+}
+/* Menu */
+.menu{
+    position: relative;
+    width: 317px;
+    height: 315px;
+    left: 0px;
+    top: 213px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;    
+    justify-items: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.menu-item{
+    text-align: center;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;    
+/* FFF */
+    color: #FFFFFF;    
+}
+.menu-item:hover{
+    background-color: azure;
+    color: #A276FF;    
+}
+.menu-item:hover::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    border: 1px solid;
+    width: 7px;    
+    height: 25px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #A276FF;
+}
+/* ITEM 1 */
+.item-1{
+    width: 55px;
+    height: 25px;
+    order: 1;
+}
+/* ITEM 2 */
+.item-2{
+    width: 55px;
+    height: 25px;
+    order: 2;    
+}
+/* ITEM 3 */
+.item-3{
+    width: 55px;
+    height: 25px;
+    order: 3;    
+}    
+/* ITEM 4 */
+.item-4{
+    width: 55px;
+    height: 25px;
+    order: 4;    
+}
+/* ITEM 5 */
+.item-5{
+    width: 55px;
+    height: 25px;
+    order: 5;    
+    }
+    
+/* HOME */
+.home{
+    position: relative;
+    width: 37px;
+    height: 25px;
+    left: 139px;
+    top: 167px;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    
+    /* A276FF */
+    color: #A276FF;
+    z-index: 3;    
+}
+
+/* YOURLOGO */
+.yourlogo{
+    /* position: absolute; */
+    position: relative;
+    left: 90px;
+    top: 68px;    
+
+    width: 137px;
+    height: 44px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 44px;
+    text-decoration: uppercase;
+    
+    /* A276FF */
+    color: #A276FF;
+    z-index: 3;    
+}
+.logo{
+    font-weight: 900;
+    font-size: 22pt;
+    color: #fff;
+    text-align: center;
+}
+.color_logo{
+    color: #A276FF;
+}
+/* Thumbs */
+.thumbs{
+    width: 80%;
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;    
+    justify-content: space-between;    
+    gap: 25px;
+}
+.karta{
+    box-sizing: border-box;
+    width: 259px;
+    height: 156px;
+    border-radius: 11px;    
+}
+.karta-1{
+    background: url(../figma/nick-owuor-astro-nic-visuals-wDifg5xc9Z4-unsplash.jpg.png);
+    background-size: cover;    
+}
+
+.karta-2{
+    background: url(../figma/karta-2.png);
+    background-size: cover;    
+}
+
+.karta-3{
+    background: url(../figma/karta-3.png);
+    background-size: cover;    
+}
+
+.karta-4{
+    background: url(../figma/karta-4.png);
+    background-size: cover;    
+}
+
+/* SIMPLE STARTER TEMPLATE */
+.simple-starter{
+    width: 1025px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 104px;
+    color: #FFFFFF;
+    z-index: 2;    
+}
+
+/* TEMPLATE */
+.template{
+    width: 1025px;
+    height: 186px;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 117px;
+    color: #A276FF;
+    z-index: 2;    
+}
+
+.a-clean-simple-desktop-design{
+    width: 1083px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 155.19%;
+    color: #FFFFFF;
+    text-align: left;
+    z-index: 2;    
+}
+
+/* LEARN MORE */
+.learn-more{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Button outline */
+.button-outline{
+    width: 352px;
+    height: 70px;
+
+    border: 3px solid #FFFFFF;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;    
+}
+
+/* NEWS */
+.news{
+    width: 1025px;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 100px;
+    color: #FFFFFF;
+    z-index: 2;        
+}
+
+/* Downward triangle */
+.downward-triangle{
+    /* box-sizing: border-box; */
+    position: relative;
+    width: 34px;
+    height: 27px;
+    left: 112px;
+    top: -103px;
+    z-index: 2;        
+}
+
+.lorem-ipsum{
+    position: relative;
+    width: 1145px;
+    height: 81px;
+    left: 5px;
+    top: -30px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 165.69%;
+    /* or 27px */
+    
+    /* FFF */
+    color: #FFFFFF;
+    /* color: red; */
+    z-index: 2;        
+}
+
+/* Rectangle 47 */
+.social-rectangle{
+    /* position: absolute; */
+    position: relative;
+    width: 232px;
+    height: 73px;    
+    left: 70%;
+    top: 0px;
+    background: #A276FF;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: space-evenly;    
+    align-items: center;   
+    z-index: 2;        
+}
+
+.social-tweeter-logo{
+    position: relative;
+    width: 22.92px; 
+    height: 21px;
+    background-image: url(../figma/tweeter-logo.png);    
+}
+
+.social-facebook-logo{
+    width: 14px; 
+    height: 22px;
+    background-image: url(../figma/facebook-logo.png);    
+}
+
+}   
+/* Медиа-запрос. */
+
+@media screen and ( max-width: 4000px ) and ( min-width: 1500px) 
+/* and ( max-height: 1600px ) and ( min-height: 1300px)  */
+{
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Oswald", sans-serif;
+} 
+
+.rabochee-pole-flex{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    flex-direction: row;    
+    align-items: center;    
+    flex-wrap: nowrap;
+    border-radius: 70px;    
+}
+
+.rabochee-pole{
+    position: absolute;
+    width: 2173px;    
+    height: 1296px;    
+    background-color: #060233f0;    
+    background-image: url(../figma/samyj-nizhnij-sloj-1.png); 
+    opacity: 1.0;    
+    border-radius: 70px;    
+    flex-basis: auto;    
+}
+
+.kameralnaya-proverka{
+    position: absolute;
+    width: 2173px;
+    height: 1296px;    
+    background-image: url(../figma/dashboard-desktop-1-obrezannyj-1.png);     
+    background-size: cover;
+    opacity: 1.0;    
+    border-radius: 70px;    
+}
+
+ /* Sidebar */
+.sidebar{
+    width: 384px;
+    height: 1296px;    
+     min-width: 384px;    
+    max-width: 384px;    
+ 
+    border-bottom-left-radius: 70px;    
+    border-top-left-radius: 70px;      
+     background-color: #060233f0;
+
+    /* Камеральная проверка. */
+    /* background-image: url(../figma/desktop-sidebar-1.png);     */
+
+    background-size: cover;
+    opacity: 1.0;
+    z-index: 1;
+}
+
+.sidebar-s-usileniem-sinego-v-fone{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -456px;
+
+    border-bottom-left-radius: 70px;    
+    border-top-left-radius: 70px;      
+    background-image: url(../figma/fon-sidebar-2.png);
+
+    background-size: cover;
+    opacity: 0.2;
+    z-index: 2;
+}
+
+.oblast-soderzhaniya{
+     width: 1790px;
+    height: 1296px;    
+     flex-grow: 2;
+    flex-basis: auto;    
+     min-width: 800px;
+    max-width: 2560px;    
+
+    background-color: #060233f0;
+
+    /* Камеральная проверка. */
+    /* background-image: url(../figma/desktop-oblast-soderzhaniya-1.png);
+    background-size: cover;
+    opacity: 1.0;     */
+
+    border-bottom-right-radius: 70px;    
+    border-top-right-radius: 70px;    
+}
+
+.oblast-soderzhaniya-s-usileniem-sinego-v-fone{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -1367px;
+
+    background-image: url(../figma/fon-oblast-soderzhaniya-2.png);
+    background-size: cover;
+    opacity: 0.2;    
+
+    border-bottom-right-radius: 70px;    
+    border-top-right-radius: 70px;    
+    z-index: 1;    
+}
+
+.oblast-soderzhaniya-flex{
+     position: relative;
+    width: 90%;
+    height: 1296px;    
+     left: 5%;
+    top: 0px;
+     display: flex;
+    flex-direction: column;
+    
+    justify-content: space-evenly;  
+    align-items: left;  
+    min-width: 800px;  
+}
+
+/* ©2020 ACME LLC. */
+.copyright{
+    /* position: absolute; */
+    position: relative;
+    width: 117px;
+    height: 25px;
+    left: 131px;
+    top: 731px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    
+    color: #FFFFFF;
+    /* color: black; */
+    
+    opacity: 0.25;
+    /* opacity: 1.0; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 3;    
+}
+
+/* Marker */
+.marker{
+    position: absolute;
+    width: 5px;
+    height: 42px;
+    left: 0px;
+    top: 200px;
+    visibility: hidden;
+    /* A276FF */
+    background: #A276FF;
+}
+/* SUPPORT */
+.support{
+    /* position: absolute; */
+    position: relative;
+    width: 59px;
+    height: 25px;
+    left: 132px;
+    top: 602px;    
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    
+    /* light */
+    color: #FFFFFF;
+    
+    opacity: 0.7;
+    z-index: 3;    
+}
+/* CONTACT */
+.contact{
+    /* position: absolute; */
+    position: relative;
+    width: 58px;
+    height: 25px;
+    left: 130px;
+    top: 649px;    
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    
+    /* light */
+    color: #FFFFFF;
+    
+    opacity: 0.7;
+    z-index: 3;    
+}
+/* Menu */
+.menu{
+    position: relative;
+    width: 317px;
+    height: 315px;
+    left: 0px;
+    top: 213px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;    
+    justify-items: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    z-index: 3;
+}
+
+.menu-item{
+    text-align: center;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;    
+/* FFF */
+    color: #FFFFFF;    
+}
+.menu-item:hover{
+    background-color: azure;
+    color: #A276FF;    
+}
+.menu-item:hover::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    border: 1px solid;
+    width: 7px;    
+    height: 25px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #A276FF;
+}
+/* ITEM 1 */
+.item-1{
+    width: 55px;
+    height: 25px;
+    order: 1;
+}
+/* ITEM 2 */
+.item-2{
+    width: 55px;
+    height: 25px;
+    order: 2;    
+}
+/* ITEM 3 */
+.item-3{
+    width: 55px;
+    height: 25px;
+    order: 3;    
+}    
+/* ITEM 4 */
+.item-4{
+    width: 55px;
+    height: 25px;
+    order: 4;    
+}
+/* ITEM 5 */
+.item-5{
+    width: 55px;
+    height: 25px;
+    order: 5;    
+    }
+    
+/* HOME */
+.home{
+     position: relative;
+    width: 37px;
+    height: 25px;
+    left: 139px;
+    top: 167px;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+     color: #A276FF;
+    z-index: 3;    
+}
+
+/* YOURLOGO */
+.yourlogo{
+    /* position: absolute; */
+    position: relative;
+    left: 90px;
+    top: 68px;    
+
+    width: 137px;
+    height: 44px;
+     
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 44px;
+    text-decoration: uppercase;
+    
+    /* A276FF */
+    color: #A276FF;
+    z-index: 3;    
+}
+.logo{
+    font-weight: 900;
+    font-size: 22pt;
+    color: #fff;
+    text-align: center;
+}
+.color_logo{
+    color: #A276FF;
+}
+/* Thumbs */
+.thumbs{
+     width: 80%;
+     display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;    
+     justify-content: space-between;    
+    gap: 25px;
+}
+.karta{
+    box-sizing: border-box;
+    width: 259px;
+    height: 156px;
+    border-radius: 11px;    
+}
+.karta-1{
+    background: url(../figma/nick-owuor-astro-nic-visuals-wDifg5xc9Z4-unsplash.jpg.png);
+    background-size: cover;    
+}
+
+.karta-2{
+    background: url(../figma/karta-2.png);
+    background-size: cover;    
+}
+
+.karta-3{
+    background: url(../figma/karta-3.png);
+    background-size: cover;    
+}
+
+.karta-4{
+    background: url(../figma/karta-4.png);
+    background-size: cover;    
+}
+
+/* SIMPLE STARTER TEMPLATE */
+.simple-starter{
+    width: 1025px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 104px;
+    /* or 186% */
+    
+    /* FFF */
+    color: #FFFFFF;
+    z-index: 2;    
+}
+
+/* TEMPLATE */
+.template{
+    width: 1025px;
+    height: 186px;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 117px;
+    /* or 98% */
+    
+    /* A276FF */
+    color: #A276FF;
+    z-index: 2;    
+}
+
+.a-clean-simple-desktop-design{
+    width: 1083px;
+     font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 155.19%;
+     color: #FFFFFF;
+    text-align: left;
+    z-index: 2;    
+}
+
+/* LEARN MORE */
+.learn-more{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100px;
+     text-align: center;
+    
+    /* FFF */
+    color: #FFFFFF;
+    /* color: red; */
+}
+
+/* Button outline */
+.button-outline{
+    width: 352px;
+    height: 70px;
+
+    border: 3px solid #FFFFFF;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;    
+}
+
+/* NEWS */
+.news{
+    width: 1025px;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 100px;
+     color: #FFFFFF;
+    z-index: 2;        
+}
+
+/* Downward triangle */
+.downward-triangle{
+     position: relative;
+    width: 34px;
+    height: 27px;
+    left: 112px;
+    top: -103px;
+    z-index: 2;        
+}
+
+.lorem-ipsum{
+    position: relative;
+    width: 1145px;
+    height: 81px;
+    left: 5px;
+    top: -30px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 165.69%;
+     color: #FFFFFF;
+     z-index: 2;        
+}
+
+/* Rectangle 47 */
+.social-rectangle{
+    /* position: absolute; */
+    position: relative;
+    width: 232px;
+    height: 73px;    
+     left: 75%;
+    top: 0px;
+    background: #A276FF;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: space-evenly;    
+    align-items: center;   
+    /* width: 100vw; */
+    z-index: 2;        
+}
+
+.social-tweeter-logo{
+    position: relative;
+    width: 22.92px; 
+    height: 21px;
+    background-image: url(../figma/tweeter-logo.png);    
+}
+
+.social-facebook-logo{
+    width: 14px; 
+    height: 22px;
+    background-image: url(../figma/facebook-logo.png);    
+}
+
+}   
+/* Медиа-запрос. */
